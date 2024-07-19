@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+    font-size: 20px;
+    height: 400px;
+    padding: 80px;
+    text-align: center;
+    background-image: url('../images/head1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 1500px;
+    color: black;
+}
+.header p{
+    font-size: 26px;
+    color: red;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+    overflow: hidden;
+    background-color: #91a100;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+.phone{
+    font-size: 25px;
+    color: rgb(242, 255, 0);
+    float: right;
+    margin-right: 50px;
+}
+.phone:hover{
+    text-decoration: underline;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+    background-color: #beb818;
+    border-radius: 40px;
+    float: right;
+    margin-right: 10px;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    font-size: 16px;
+    font-weight: bolder;
+    background-color: #ddd;
+    color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+    background-color: #beb818;
+    color: white;
+}
+
+/* Column container */
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    -ms-flex: 30%;
+    /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Main column */
+.main {
+    -ms-flex: 70%;
+    /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Fake image, just for this example */
+.step1 {
+    width: 100%;
+    /* padding: 20px; */
+}
+.step2 {
+    width: 100%;
+    /* padding: 20px; */
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    text-align: center;
+    background-image: url('../images/foot1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 600px;
+    background-position: 00px -100px;
+}
+.footer1{
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.467);
+    position: relative;
+    top: -20px;
+}
+.step1 img{
+    width: 415px;
+    height: 220px;
+}
+.step2 img{
+    width: 415px;
+    height: 220px;
+}
+
+.img1 img{
+    width: 100%;
+    height: 300px;
+}
+.main h2{
+    font-size: 40px;
+}
+#displayed-image {
+    border-radius: 40px;
+    max-width: 100%;
+    width: 900px;
+    height: 500px;
+    margin: 20px;
+    margin-left: 70px;
+}
+.main p{
+    color: red;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-left: 40px;
+}
+marquee{
+    font-size: 30px;
+    background-color: rgba(128, 128, 128, 0.41);
+}
+.content1{
+    color: rgb(255, 255, 255);
+    padding: 100px;
+    padding-left: 150px;
+    font-size: 40px;
+    width: 100%;
+    height: 300px;
+    background-image: url('../images/img21.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 300px;
+}
+.content1 p{
+    padding-left: 40px;
+    width: 700px;
+    border-radius: 40px;
+    background-color: rgba(0, 0, 0, 0.464);
+}
+#logo{
+    font-weight: bolder;
+    font-size: 40px;
+    color: #b9ce00;
+    float: left;
+    margin-top: 40px;
+    margin-left: 250px;
+}
+#logo1{
+    font-size: 20px;
+    color: #b9ce00;
+    position: relative;
+    top: 80px;
+    left: -500px;
+}
+.address{
+    width: 400px;
+}
+.address li{
+    width: 440px;
+    margin-bottom: 10px;
+    list-style: none;
+    font-size: 16px;
+    color: white;
+    position: relative;
+    top: 60px;
+    left: 120px;
+}
+.links{
+    font-size: 20px;
+    width: 800px;
+    position: relative;
+    top: -125px;
+    left: 590px;
+    z-index: 1;
+}
+.links a {
+    color: #b9ce00;
+    text-decoration: none;
+}
+.links a:hover{
+    /* font-size: 21px; */
+    color: rgb(255, 0, 0);
+    text-decoration: underline;
+    background-color: rgba(188, 188, 188, 0.149);
+    border-radius: 20px;
+}
+.links li{
+    margin-left: 90px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.some{
+    width: 550px;
+    height: 100px;
+    background-color: rgba(128, 128, 128, 0.662);
+    border-left: 8px solid white;
+    border-right: 8px solid white;
+    position: relative;
+    top: -250px;
+    left: 780px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
